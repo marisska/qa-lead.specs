@@ -11,6 +11,6 @@ module.exports = {
     locatorHelpers.getPartialHeader(header).click();
   },  
   clickLinkInSection(link, section) {
- 	locatorHelpers.getLinkInSection(link, section).click();
+     locatorHelpers.getLinkInSection(link, section).click();
   }
 }
