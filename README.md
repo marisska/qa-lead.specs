@@ -28,7 +28,7 @@ Run tests with:
 
 ## PART II
 
-* To run tests in the mobile version, the configuration file would need to include in capabilites the mobile emulation parameter with the device name, e.g.
+* To run tests in the mobile version, the configuration file would need to include the mobile emulation parameter with the device name in the driver capabilities, e.g.
 
 	capabilities: {
 	  browserName: 'chrome',
@@ -41,3 +41,19 @@ Run tests with:
 
 Run tests in the mobile version with:
 	protractor conf-mobile.js
+
+* To run tests in the real device (theoretically), the configuration file would need to include the device characteristics in the driver capabilities: device name and id, platform name and version, e.g.
+
+	deviceName: 'Android Phone',
+	udid: '<deviceId>', 
+	platformName: 'Android',
+	platformVersion: '6.0'
+
+In addition, (theroretically) you could need Android SDK
+
+* To run tests in a hybrid app, (theroretically) the configuration file would need to include app characteristics, the application needs to be started on a device before running the tests
+
+	appPackage: '<appPackage>',
+	appActivities: '<appActivities>'
+
+* To run tests in a native app, the implementation of the steps need to be adjusted
