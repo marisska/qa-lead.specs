@@ -4,5 +4,5 @@ exports.config = {
   capabilities: {
     browserName: 'chrome'
   },
-  specs: ['specs/qa-specs.js']
+  specs: ['specs/qa-lead-specs.js']
 };
