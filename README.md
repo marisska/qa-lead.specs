@@ -14,6 +14,8 @@ Use webdriver-manager to download the necessary binaries with:
 
 	webdriver-manager update
 
+In order to start webdriver manager, you would need JDK http://www.oracle.com/technetwork/java/javase/downloads/index.html
+
 ### Run tests
 
 Start up a server with:
